@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
-  before_action :authorize_request, except: %i[create]
-  before_action :find_user, except: %i[create index]
+  before_action :authorize_request, except: %i[create forgot reset]
+  before_action :find_user, except: %i[create index forgot reset]
 
   # GET /users
   def index
@@ -39,6 +39,52 @@ class UsersController < ApplicationController
     @user.destroy
   end
 
+  #mailer
+
+  # funcao para gerar o token
+  def forgot
+    if params[:email].blank?
+      return render json: {error: 'Email está em branco'}
+    end
+
+    user = User.find_by(email: params[:email])
+
+    if user.present?
+      user.generate_password_token!
+      UserMailer.forgot_password_email(user).deliver_later
+      render json: {status: 'ok'}, status: :ok
+    else
+      render json: {error: ['Email não foi achado, por favor confira seu email.']}, status: :not_found
+    end
+  end
+
+  #função para resetar a senha
+  def reset
+    token = params[:token].to_s
+    email = params[:email]
+  
+    if token.blank?
+      return render json: {error: 'Token está em branco'}
+    end
+  
+    if email.blank?
+      return render json: {error: 'Email esta em branco'}
+    end
+  
+    user = User.find_by(email: params[:email])
+  
+    if user.present? && user.password_token_valid?
+      if user.reset_password!(params[:password])
+        UserMailer.reset_password_email(user).deliver_now
+        render json: {status: 'ok'}, status: :ok
+      else
+        render json: {error: user.errors.full_messages}, status: :unprocessable_entity
+      end
+    else
+      render json: {error:  ['Token não está valido. Tente novamente']}, status: :not_found
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def find_user
@@ -49,6 +95,6 @@ class UsersController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def user_params
-      params.permit(:email, :password, :password_confirmation)
+      params.require(:user).permit(:email, :password, :password_confirmation)
     end
 end
