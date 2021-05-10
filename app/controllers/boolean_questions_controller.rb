@@ -46,6 +46,6 @@ class BooleanQuestionsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def boolean_question_params
-      params.require(:boolean_question).permit(:title, :answer, :survey_id)
+      params.permit(:title, :answer, :survey_id)
     end
 end
