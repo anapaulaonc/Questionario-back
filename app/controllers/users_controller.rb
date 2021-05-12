@@ -58,7 +58,12 @@ class UsersController < ApplicationController
     end
   end
 
-  #função para resetar a senha
+  #Função utilizada para resetar a senha
+  #
+  # == Parameters:
+  #
+  # == Returns:
+  # Uma ação que envia o email caso tudo esteja correto.
   def reset
     token = params[:token].to_s
     email = params[:email]
