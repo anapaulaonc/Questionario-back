@@ -46,6 +46,6 @@ class AlternativeQuestionsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def alternative_question_params
-      params.require(:alternative_question).permit(:title, :answer, :survey_id, :questionA, :questionB, :questionC, :questionD )
+      params.permit(:title, :answer, :survey_id, :questionA, :questionB, :questionC, :questionD )
     end
 end
