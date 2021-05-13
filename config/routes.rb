@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :answers
   resources :discursive_questions
   resources :alternative_questions
   resources :boolean_questions
