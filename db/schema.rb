@@ -10,10 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_13_005550) do
+ActiveRecord::Schema.define(version: 2021_05_16_190802) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "alternative_answers", force: :cascade do |t|
+    t.string "text"
+    t.bigint "alternative_question_id", null: false
+    t.bigint "survey_id", null: false
+    t.string "email"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["alternative_question_id"], name: "index_alternative_answers_on_alternative_question_id"
+    t.index ["survey_id"], name: "index_alternative_answers_on_survey_id"
+  end
 
   create_table "alternative_questions", force: :cascade do |t|
     t.string "title"
@@ -38,6 +49,17 @@ ActiveRecord::Schema.define(version: 2021_05_13_005550) do
     t.index ["survey_id"], name: "index_answers_on_survey_id"
   end
 
+  create_table "boolean_answers", force: :cascade do |t|
+    t.boolean "answer"
+    t.bigint "boolean_question_id", null: false
+    t.bigint "survey_id", null: false
+    t.string "email"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["boolean_question_id"], name: "index_boolean_answers_on_boolean_question_id"
+    t.index ["survey_id"], name: "index_boolean_answers_on_survey_id"
+  end
+
   create_table "boolean_questions", force: :cascade do |t|
     t.string "title"
     t.boolean "answer"
@@ -45,6 +67,17 @@ ActiveRecord::Schema.define(version: 2021_05_13_005550) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["survey_id"], name: "index_boolean_questions_on_survey_id"
+  end
+
+  create_table "discursive_answers", force: :cascade do |t|
+    t.text "text"
+    t.bigint "discursive_question_id", null: false
+    t.bigint "survey_id", null: false
+    t.string "email"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["discursive_question_id"], name: "index_discursive_answers_on_discursive_question_id"
+    t.index ["survey_id"], name: "index_discursive_answers_on_survey_id"
   end
 
   create_table "discursive_questions", force: :cascade do |t|
@@ -59,6 +92,8 @@ ActiveRecord::Schema.define(version: 2021_05_13_005550) do
     t.string "title"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "user_id", null: false
+    t.index ["user_id"], name: "index_surveys_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -70,8 +105,15 @@ ActiveRecord::Schema.define(version: 2021_05_13_005550) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "alternative_answers", "alternative_questions"
+  add_foreign_key "alternative_answers", "surveys"
   add_foreign_key "alternative_questions", "surveys"
   add_foreign_key "answers", "surveys"
+  add_foreign_key "boolean_answers", "boolean_questions"
+  add_foreign_key "boolean_answers", "surveys"
   add_foreign_key "boolean_questions", "surveys"
+  add_foreign_key "discursive_answers", "discursive_questions"
+  add_foreign_key "discursive_answers", "surveys"
   add_foreign_key "discursive_questions", "surveys"
+  add_foreign_key "surveys", "users"
 end

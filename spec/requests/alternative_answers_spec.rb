@@ -12,9 +12,9 @@ require 'rails_helper'
 # of tools you can use to make these specs even more expressive, but we're
 # sticking to rails and rspec-rails APIs to keep things simple and stable.
 
-RSpec.describe "/answers", type: :request do
+RSpec.describe "/alternative_answers", type: :request do
   # This should return the minimal set of attributes required to create a valid
-  # Answer. As you add validations to Answer, be sure to
+  # AlternativeAnswer. As you add validations to AlternativeAnswer, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) {
     skip("Add a hash of attributes valid for your model")
@@ -26,7 +26,7 @@ RSpec.describe "/answers", type: :request do
 
   # This should return the minimal set of values that should be in the headers
   # in order to pass any filters (e.g. authentication) defined in
-  # AnswersController, or in your router and rack
+  # AlternativeAnswersController, or in your router and rack
   # middleware. Be sure to keep this updated too.
   let(:valid_headers) {
     {}
@@ -34,48 +34,48 @@ RSpec.describe "/answers", type: :request do
 
   describe "GET /index" do
     it "renders a successful response" do
-      Answer.create! valid_attributes
-      get answers_url, headers: valid_headers, as: :json
+      AlternativeAnswer.create! valid_attributes
+      get alternative_answers_url, headers: valid_headers, as: :json
       expect(response).to be_successful
     end
   end
 
   describe "GET /show" do
     it "renders a successful response" do
-      answer = Answer.create! valid_attributes
-      get answer_url(answer), as: :json
+      alternative_answer = AlternativeAnswer.create! valid_attributes
+      get alternative_answer_url(alternative_answer), as: :json
       expect(response).to be_successful
     end
   end
 
   describe "POST /create" do
     context "with valid parameters" do
-      it "creates a new Answer" do
+      it "creates a new AlternativeAnswer" do
         expect {
-          post answers_url,
-               params: { answer: valid_attributes }, headers: valid_headers, as: :json
-        }.to change(Answer, :count).by(1)
+          post alternative_answers_url,
+               params: { alternative_answer: valid_attributes }, headers: valid_headers, as: :json
+        }.to change(AlternativeAnswer, :count).by(1)
       end
 
-      it "renders a JSON response with the new answer" do
-        post answers_url,
-             params: { answer: valid_attributes }, headers: valid_headers, as: :json
+      it "renders a JSON response with the new alternative_answer" do
+        post alternative_answers_url,
+             params: { alternative_answer: valid_attributes }, headers: valid_headers, as: :json
         expect(response).to have_http_status(:created)
         expect(response.content_type).to match(a_string_including("application/json"))
       end
     end
 
     context "with invalid parameters" do
-      it "does not create a new Answer" do
+      it "does not create a new AlternativeAnswer" do
         expect {
-          post answers_url,
-               params: { answer: invalid_attributes }, as: :json
-        }.to change(Answer, :count).by(0)
+          post alternative_answers_url,
+               params: { alternative_answer: invalid_attributes }, as: :json
+        }.to change(AlternativeAnswer, :count).by(0)
       end
 
-      it "renders a JSON response with errors for the new answer" do
-        post answers_url,
-             params: { answer: invalid_attributes }, headers: valid_headers, as: :json
+      it "renders a JSON response with errors for the new alternative_answer" do
+        post alternative_answers_url,
+             params: { alternative_answer: invalid_attributes }, headers: valid_headers, as: :json
         expect(response).to have_http_status(:unprocessable_entity)
         expect(response.content_type).to eq("application/json")
       end
@@ -88,28 +88,28 @@ RSpec.describe "/answers", type: :request do
         skip("Add a hash of attributes valid for your model")
       }
 
-      it "updates the requested answer" do
-        answer = Answer.create! valid_attributes
-        patch answer_url(answer),
-              params: { answer: new_attributes }, headers: valid_headers, as: :json
-        answer.reload
+      it "updates the requested alternative_answer" do
+        alternative_answer = AlternativeAnswer.create! valid_attributes
+        patch alternative_answer_url(alternative_answer),
+              params: { alternative_answer: new_attributes }, headers: valid_headers, as: :json
+        alternative_answer.reload
         skip("Add assertions for updated state")
       end
 
-      it "renders a JSON response with the answer" do
-        answer = Answer.create! valid_attributes
-        patch answer_url(answer),
-              params: { answer: new_attributes }, headers: valid_headers, as: :json
+      it "renders a JSON response with the alternative_answer" do
+        alternative_answer = AlternativeAnswer.create! valid_attributes
+        patch alternative_answer_url(alternative_answer),
+              params: { alternative_answer: new_attributes }, headers: valid_headers, as: :json
         expect(response).to have_http_status(:ok)
         expect(response.content_type).to match(a_string_including("application/json"))
       end
     end
 
     context "with invalid parameters" do
-      it "renders a JSON response with errors for the answer" do
-        answer = Answer.create! valid_attributes
-        patch answer_url(answer),
-              params: { answer: invalid_attributes }, headers: valid_headers, as: :json
+      it "renders a JSON response with errors for the alternative_answer" do
+        alternative_answer = AlternativeAnswer.create! valid_attributes
+        patch alternative_answer_url(alternative_answer),
+              params: { alternative_answer: invalid_attributes }, headers: valid_headers, as: :json
         expect(response).to have_http_status(:unprocessable_entity)
         expect(response.content_type).to eq("application/json")
       end
@@ -117,11 +117,11 @@ RSpec.describe "/answers", type: :request do
   end
 
   describe "DELETE /destroy" do
-    it "destroys the requested answer" do
-      answer = Answer.create! valid_attributes
+    it "destroys the requested alternative_answer" do
+      alternative_answer = AlternativeAnswer.create! valid_attributes
       expect {
-        delete answer_url(answer), headers: valid_headers, as: :json
-      }.to change(Answer, :count).by(-1)
+        delete alternative_answer_url(alternative_answer), headers: valid_headers, as: :json
+      }.to change(AlternativeAnswer, :count).by(-1)
     end
   end
 end

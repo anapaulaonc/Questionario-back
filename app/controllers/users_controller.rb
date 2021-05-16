@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :authorize_request, except: %i[create forgot reset]
+  before_action :authorize_request, except: %i[create forgot reset show]
   before_action :find_user, except: %i[create index forgot reset]
 
   # GET /users

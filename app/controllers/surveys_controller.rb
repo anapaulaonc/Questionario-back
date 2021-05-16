@@ -1,21 +1,22 @@
 class SurveysController < ApplicationController
   before_action :set_survey, only: [:show, :update, :destroy]
+  before_action :authorize_request, only: [:create]
 
   # GET /surveys
   def index
     @surveys = Survey.all
-
     render json: @surveys
+
   end
 
   # GET /surveys/1
   def show
-    render json: @survey, include: [:answers] , methods: [:set_boolean_question, :set_alternative_question , :set_discursive_question]
+    render json: @survey , methods: [:set_boolean_question, :set_alternative_question , :set_discursive_question]
   end
 
   # POST /surveys
   def create
-    @survey = Survey.new(survey_params)
+    @survey = @current_user.surveys.new(survey_params)
 
     if @survey.save
       render json: @survey, status: :created, location: @survey

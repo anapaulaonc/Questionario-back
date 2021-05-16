@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :answers
+  resources :boolean_answers
+  resources :alternative_answers
+  resources :discursive_answers
   resources :discursive_questions
   resources :alternative_questions
   resources :boolean_questions
@@ -9,5 +11,6 @@ Rails.application.routes.draw do
   post '/auth/login', to: 'authentication#login'
   post "login/forgot_password", to: "users#forgot"
   post "login/reset_password", to: "users#reset"
+  
   
 end
