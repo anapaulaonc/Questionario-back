@@ -39,16 +39,6 @@ ActiveRecord::Schema.define(version: 2021_05_16_190802) do
     t.index ["survey_id"], name: "index_alternative_questions_on_survey_id"
   end
 
-  create_table "answers", force: :cascade do |t|
-    t.bigint "survey_id", null: false
-    t.boolean "boolean_answer"
-    t.string "alternative_answer"
-    t.text "discursive_answer"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["survey_id"], name: "index_answers_on_survey_id"
-  end
-
   create_table "boolean_answers", force: :cascade do |t|
     t.boolean "answer"
     t.bigint "boolean_question_id", null: false
@@ -108,7 +98,6 @@ ActiveRecord::Schema.define(version: 2021_05_16_190802) do
   add_foreign_key "alternative_answers", "alternative_questions"
   add_foreign_key "alternative_answers", "surveys"
   add_foreign_key "alternative_questions", "surveys"
-  add_foreign_key "answers", "surveys"
   add_foreign_key "boolean_answers", "boolean_questions"
   add_foreign_key "boolean_answers", "surveys"
   add_foreign_key "boolean_questions", "surveys"

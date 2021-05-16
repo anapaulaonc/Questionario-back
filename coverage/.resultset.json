@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/pedrohmoura/Unb/Questionario-back/app/mailers/user_mailer.rb": {
+      "/mnt/c/Users/laqui/OneDrive/Área de Trabalho/Unb/MP/Trabalho_Final/Questionario-back/app/mailers/user_mailer.rb": {
         "lines": [
           1,
           1,
@@ -16,7 +16,7 @@
           null
         ]
       },
-      "/home/pedrohmoura/Unb/Questionario-back/app/mailers/application_mailer.rb": {
+      "/mnt/c/Users/laqui/OneDrive/Área de Trabalho/Unb/MP/Trabalho_Final/Questionario-back/app/mailers/application_mailer.rb": {
         "lines": [
           1,
           1,
@@ -24,7 +24,22 @@
           null
         ]
       },
-      "/home/pedrohmoura/Unb/Questionario-back/app/models/alternative_question.rb": {
+      "/mnt/c/Users/laqui/OneDrive/Área de Trabalho/Unb/MP/Trabalho_Final/Questionario-back/app/models/alternative_answer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/mnt/c/Users/laqui/OneDrive/Área de Trabalho/Unb/MP/Trabalho_Final/Questionario-back/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/mnt/c/Users/laqui/OneDrive/Área de Trabalho/Unb/MP/Trabalho_Final/Questionario-back/app/models/alternative_question.rb": {
         "lines": [
           1,
           1,
@@ -34,60 +49,60 @@
           null
         ]
       },
-      "/home/pedrohmoura/Unb/Questionario-back/app/models/application_record.rb": {
+      "/mnt/c/Users/laqui/OneDrive/Área de Trabalho/Unb/MP/Trabalho_Final/Questionario-back/app/models/boolean_answer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/mnt/c/Users/laqui/OneDrive/Área de Trabalho/Unb/MP/Trabalho_Final/Questionario-back/app/models/boolean_question.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/home/pedrohmoura/Unb/Questionario-back/app/models/boolean_question.rb": {
+      "/mnt/c/Users/laqui/OneDrive/Área de Trabalho/Unb/MP/Trabalho_Final/Questionario-back/app/models/discursive_answer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/mnt/c/Users/laqui/OneDrive/Área de Trabalho/Unb/MP/Trabalho_Final/Questionario-back/app/models/discursive_question.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/home/pedrohmoura/Unb/Questionario-back/app/models/discursive_question.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/home/pedrohmoura/Unb/Questionario-back/app/models/survey.rb": {
+      "/mnt/c/Users/laqui/OneDrive/Área de Trabalho/Unb/MP/Trabalho_Final/Questionario-back/app/models/survey.rb": {
         "lines": [
           1,
           1,
           1,
           1,
-          null,
           1,
-          0,
           null,
-          null,
-          1,
-          0,
-          null,
-          null,
-          1,
-          0,
           null,
           null,
           null,
           null
         ]
       },
-      "/home/pedrohmoura/Unb/Questionario-back/app/models/user.rb": {
+      "/mnt/c/Users/laqui/OneDrive/Área de Trabalho/Unb/MP/Trabalho_Final/Questionario-back/app/models/user.rb": {
         "lines": [
           1,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          3,
+          7,
           null,
           1,
           0,
@@ -114,84 +129,7 @@
           null
         ]
       },
-      "/home/pedrohmoura/Unb/Questionario-back/app/controllers/alternative_questions_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          null,
-          1,
-          0,
-          null,
-          0,
-          null,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null,
-          null,
-          1,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          null,
-          null,
-          null,
-          null,
-          1,
-          0,
-          0,
-          null,
-          0,
-          null,
-          null,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null,
-          1,
-          null,
-          1,
-          0,
-          null,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null
-        ]
-      },
-      "/home/pedrohmoura/Unb/Questionario-back/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          1,
-          0,
-          null,
-          null,
-          1,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          null,
-          null
-        ]
-      },
-      "/home/pedrohmoura/Unb/Questionario-back/app/controllers/boolean_questions_controller.rb": {
+      "/mnt/c/Users/laqui/OneDrive/Área de Trabalho/Unb/MP/Trabalho_Final/Questionario-back/app/controllers/alternative_answers_controller.rb": {
         "lines": [
           1,
           1,
@@ -246,7 +184,29 @@
           null
         ]
       },
-      "/home/pedrohmoura/Unb/Questionario-back/app/controllers/discursive_questions_controller.rb": {
+      "/mnt/c/Users/laqui/OneDrive/Área de Trabalho/Unb/MP/Trabalho_Final/Questionario-back/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/mnt/c/Users/laqui/OneDrive/Área de Trabalho/Unb/MP/Trabalho_Final/Questionario-back/app/controllers/alternative_questions_controller.rb": {
         "lines": [
           1,
           1,
@@ -301,7 +261,7 @@
           null
         ]
       },
-      "/home/pedrohmoura/Unb/Questionario-back/app/controllers/surveys_controller.rb": {
+      "/mnt/c/Users/laqui/OneDrive/Área de Trabalho/Unb/MP/Trabalho_Final/Questionario-back/app/controllers/boolean_answers_controller.rb": {
         "lines": [
           1,
           1,
@@ -356,7 +316,387 @@
           null
         ]
       },
-      "/home/pedrohmoura/Unb/Questionario-back/app/jobs/application_job.rb": {
+      "/mnt/c/Users/laqui/OneDrive/Área de Trabalho/Unb/MP/Trabalho_Final/Questionario-back/app/controllers/boolean_questions_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/mnt/c/Users/laqui/OneDrive/Área de Trabalho/Unb/MP/Trabalho_Final/Questionario-back/app/controllers/discursive_answers_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/mnt/c/Users/laqui/OneDrive/Área de Trabalho/Unb/MP/Trabalho_Final/Questionario-back/app/controllers/discursive_questions_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/mnt/c/Users/laqui/OneDrive/Área de Trabalho/Unb/MP/Trabalho_Final/Questionario-back/app/controllers/surveys_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/mnt/c/Users/laqui/OneDrive/Área de Trabalho/Unb/MP/Trabalho_Final/Questionario-back/app/channels/application_cable/channel.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/mnt/c/Users/laqui/OneDrive/Área de Trabalho/Unb/MP/Trabalho_Final/Questionario-back/app/channels/application_cable/connection.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/mnt/c/Users/laqui/OneDrive/Área de Trabalho/Unb/MP/Trabalho_Final/Questionario-back/app/controllers/authentication_controller.rb": {
+        "lines": [
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/mnt/c/Users/laqui/OneDrive/Área de Trabalho/Unb/MP/Trabalho_Final/Questionario-back/app/controllers/users_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/mnt/c/Users/laqui/OneDrive/Área de Trabalho/Unb/MP/Trabalho_Final/Questionario-back/app/jobs/application_job.rb": {
         "lines": [
           0,
           null,
@@ -369,141 +709,7 @@
         "branches": {
         }
       },
-      "/home/pedrohmoura/Unb/Questionario-back/app/controllers/authentication_controller.rb": {
-        "lines": [
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/pedrohmoura/Unb/Questionario-back/app/controllers/users_controller.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          null,
-          null,
-          null,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/pedrohmoura/Unb/Questionario-back/app/lib/json_web_token.rb": {
+      "/mnt/c/Users/laqui/OneDrive/Área de Trabalho/Unb/MP/Trabalho_Final/Questionario-back/app/lib/json_web_token.rb": {
         "lines": [
           0,
           0,
@@ -514,26 +720,6 @@
           0,
           null,
           0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/pedrohmoura/Unb/Questionario-back/app/channels/application_cable/connection.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/pedrohmoura/Unb/Questionario-back/app/channels/application_cable/channel.rb": {
-        "lines": [
           0,
           0,
           0,
@@ -543,6 +729,6 @@
         }
       }
     },
-    "timestamp": 1620853769
+    "timestamp": 1621206119
   }
 }

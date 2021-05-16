@@ -4,17 +4,7 @@ class Survey < ApplicationRecord
   has_many :discursive_questions, dependent: :destroy
   belongs_to :user
 
-  def set_boolean_question
-    self.boolean_questions
-  end
-
-  def set_alternative_question
-    self.alternative_questions
-  end
-
-  def set_discursive_question
-    self.discursive_questions
-  end
+  
 
 end
 

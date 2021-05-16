@@ -11,7 +11,7 @@ class SurveysController < ApplicationController
 
   # GET /surveys/1
   def show
-    render json: @survey, methods: [:set_boolean_question, :set_alternative_question , :set_discursive_question]
+    render json: @survey, include: [:boolean_questions, :alternative_questions, :discursive_questions]
   end
 
   # POST /surveys
