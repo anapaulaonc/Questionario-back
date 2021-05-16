@@ -5,13 +5,13 @@ class SurveysController < ApplicationController
   # GET /surveys
   def index
     @surveys = Survey.all
-    render json: @surveys
+    render json: @surveys, include: [:user] 
 
   end
 
   # GET /surveys/1
   def show
-    render json: @survey , methods: [:set_boolean_question, :set_alternative_question , :set_discursive_question]
+    render json: @survey, methods: [:set_boolean_question, :set_alternative_question , :set_discursive_question]
   end
 
   # POST /surveys
