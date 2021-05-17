@@ -29,5 +29,20 @@
 # To learn more, please read the Rails Internationalization guide
 # available at https://guides.rubyonrails.org/i18n.html.
 
+
 en:
-  hello: "Hello world"
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              blank: "Email não pode ficar em branco"
+              taken: "Esse email já existe"
+              invalid: "O email foi digitado de forma errado"
+            password:
+              blank: "Senha não pode ficar em branco"
+              confirmation: "As senhas não são iguais"
+            password_confirmation:
+              blank: "As senhas não são iguais"
+              confirmation: "As senhas não são iguais"
