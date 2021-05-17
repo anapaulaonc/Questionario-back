@@ -1,5 +1,17 @@
 # Questionario-back
 Trabalho MP
+
+Ana Paula Oliveira da Nóbrega Costa - 190142120
+
+Lucas Aquino Costa - 190055146
+
+Luis Fernando Lamellas -190016841
+
+Pedro Moura - 190018810
+
+Roberto Caixeta Ribeiro Oliveira- 190019611
+
+
 ## Guia de instalação
 
 ## Ubuntu
