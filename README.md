@@ -14,8 +14,8 @@ gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D69
 ```
 Feche e reabra o terminal para prosseguir
 ```sh
-rvm install 2.6.0
-rvm --default use 2.6.0
+rvm install 2.7.0
+rvm --default use 2.7.0
 ```
 
 Gems
@@ -37,3 +37,13 @@ Instalação aqui: https://www.postgresql.org/download/macosx/
 
 WINDOWS
 Instalação aqui: https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
+
+
+Começar a rodar
+```sh
+bundle install
+rails db:reset
+rails db:migrate
+rails s
+```
+
